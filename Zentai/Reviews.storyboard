@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Heavy.ttf">
+            <string>SanFranciscoText-Heavy</string>
+        </array>
+        <array key="SanFranciscoText-Light.ttf">
+            <string>SanFranciscoText-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Practitioner ReviewsVC-->
+        <scene sceneID="nev-Nh-uo7">
+            <objects>
+                <viewController storyboardIdentifier="PractitionerReviewsVC" id="xQN-1w-Rpq" customClass="PractitionerReviewsVC" customModule="zentai" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ers-Xz-ZVq"/>
+                        <viewControllerLayoutGuide type="bottom" id="3d3-wn-BMZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LPM-qU-e29">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="I0G-ic-WNz">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Previous Reviews" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPz-dO-eDM">
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="20"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r6d-Cf-ug0">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monica J." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rv2-zR-4hz">
+                                                <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="20"/>
+                                                <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvg-qb-WxZ" customClass="StartsView" customModule="zentai" customModuleProvider="target">
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="wBN-nI-uOv"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NBa-hK-Jkg">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMMENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibp-L4-Lhz">
+                                                <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="12"/>
+                                                <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uw-Bi-rQS">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="Slq-m1-gnM"/>
+                                                    <constraint firstAttribute="height" constant="20" id="clb-mp-ruN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="13"/>
+                                                <state key="normal" title="?">
+                                                    <color key="titleColor" red="1" green="0.35294117650000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="commentsInfoButtonTouched" destination="xQN-1w-Rpq" eventType="touchUpInside" id="3ar-ff-Qhm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="7d7-S7-dhB"/>
+                                            <constraint firstAttribute="height" constant="20" id="mQ1-Cq-8vu"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="r6d-Cf-ug0" firstAttribute="leading" secondItem="I0G-ic-WNz" secondAttribute="leading" id="ax4-3V-P8I"/>
+                                    <constraint firstAttribute="trailing" secondItem="r6d-Cf-ug0" secondAttribute="trailing" id="tPN-X2-44i"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="86" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FWI-1B-DMH">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellReviewId" rowHeight="100" id="Yoh-Ke-JvR" customClass="PractitionerReviewCell" customModule="zentai" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yoh-Ke-JvR" id="DEe-HI-IRU">
+                                            <frame key="frameInset" width="375" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="leL-A5-Nwf">
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ySo-Da-yBH">
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jessica " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcB-dm-qTx">
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="14"/>
+                                                                    <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Nov 21 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHW-fk-597">
+                                                                    <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="12"/>
+                                                                    <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xua-cZ-ASz">
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="13"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="leL-A5-Nwf" secondAttribute="bottom" id="92m-wN-h2O"/>
+                                                <constraint firstItem="leL-A5-Nwf" firstAttribute="leading" secondItem="DEe-HI-IRU" secondAttribute="leadingMargin" id="DCO-Ng-e5X"/>
+                                                <constraint firstItem="leL-A5-Nwf" firstAttribute="top" secondItem="DEe-HI-IRU" secondAttribute="topMargin" id="fkb-zl-Tz4"/>
+                                                <constraint firstItem="leL-A5-Nwf" firstAttribute="trailing" secondItem="DEe-HI-IRU" secondAttribute="trailingMargin" id="sf8-v2-dOL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentsTextView" destination="Xua-cZ-ASz" id="bDz-6W-Fd8"/>
+                                            <outlet property="dateCreationLabel" destination="WHW-fk-597" id="5u3-Yw-3BR"/>
+                                            <outlet property="reviewerNameLabel" destination="vcB-dm-qTx" id="4u5-aU-J7Q"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xQN-1w-Rpq" id="7mQ-2i-pJ3"/>
+                                    <outlet property="delegate" destination="xQN-1w-Rpq" id="Rtr-xB-7se"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uag-7q-jSy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Les-br-N3d"/>
+                                    <constraint firstAttribute="width" constant="50" id="SxQ-NS-nZ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.66274509800000003" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="close" destination="xQN-1w-Rpq" eventType="touchUpInside" id="TNJ-Pa-U8d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FWI-1B-DMH" firstAttribute="leading" secondItem="LPM-qU-e29" secondAttribute="leading" id="8Yr-Gd-3CB"/>
+                            <constraint firstItem="uag-7q-jSy" firstAttribute="top" secondItem="LPM-qU-e29" secondAttribute="top" id="GX1-pW-auu"/>
+                            <constraint firstAttribute="trailing" secondItem="uag-7q-jSy" secondAttribute="trailing" id="NRH-4Y-fGY"/>
+                            <constraint firstItem="I0G-ic-WNz" firstAttribute="top" secondItem="Ers-Xz-ZVq" secondAttribute="bottom" constant="8" id="UCG-VO-z3v"/>
+                            <constraint firstItem="3d3-wn-BMZ" firstAttribute="top" secondItem="FWI-1B-DMH" secondAttribute="bottom" id="YIX-Ae-3AR"/>
+                            <constraint firstAttribute="trailing" secondItem="FWI-1B-DMH" secondAttribute="trailing" id="auC-Cg-q7i"/>
+                            <constraint firstAttribute="trailing" secondItem="I0G-ic-WNz" secondAttribute="trailing" constant="12" id="dh5-Bz-yfV"/>
+                            <constraint firstItem="FWI-1B-DMH" firstAttribute="top" secondItem="I0G-ic-WNz" secondAttribute="bottom" constant="20" id="f3G-7I-GtA"/>
+                            <constraint firstItem="I0G-ic-WNz" firstAttribute="leading" secondItem="LPM-qU-e29" secondAttribute="leading" constant="12" id="wEc-7k-Qru"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clientNameLabel" destination="Rv2-zR-4hz" id="XD1-Ej-cQZ"/>
+                        <outlet property="commentsInfoButton" destination="0uw-Bi-rQS" id="hNV-IZ-OZQ"/>
+                        <outlet property="starsView" destination="cvg-qb-WxZ" id="dpq-j4-ABP"/>
+                        <outlet property="tableView" destination="FWI-1B-DMH" id="2CP-7N-MB1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDI-nQ-5oe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="-474.51274362818594"/>
+        </scene>
+    </scenes>
+</document>

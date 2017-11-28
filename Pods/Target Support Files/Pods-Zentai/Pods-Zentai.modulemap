@@ -1,0 +1,6 @@
+framework module Pods_Zentai {
+  umbrella header "Pods-Zentai-umbrella.h"
+
+  export *
+  module * { export * }
+}

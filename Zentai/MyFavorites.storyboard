@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Heavy.ttf">
+            <string>SanFranciscoText-Heavy</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My FavoritesVC-->
+        <scene sceneID="L15-bm-t2M">
+            <objects>
+                <tableViewController storyboardIdentifier="MyFavoritesVC" id="ulI-nn-4Cv" customClass="MyFavoritesVC" customModule="zentai" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="S7n-do-twj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myFavoritesCellId" rowHeight="70" id="fae-8T-PRs" customClass="MyFavoritesCell" customModule="zentai" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fae-8T-PRs" id="j55-1r-clJ">
+                                    <frame key="frameInset" width="375" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GDs-0H-dWX">
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-default" translatesAutoresizingMaskIntoConstraints="NO" id="W0N-4E-djf">
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="UJB-No-qhv"/>
+                                                        <constraint firstAttribute="height" constant="70" id="iMn-V3-OSR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ebS-Rj-fJb">
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monica J." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nac-Zm-3da">
+                                                            <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="17"/>
+                                                            <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="Nac-Zm-3da" secondAttribute="trailing" id="bBu-O1-WGI"/>
+                                                        <constraint firstItem="Nac-Zm-3da" firstAttribute="leading" secondItem="ebS-Rj-fJb" secondAttribute="leading" id="yc0-Nw-Fth"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appointment-eye" translatesAutoresizingMaskIntoConstraints="NO" id="GDL-4B-TtD">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Bod-Jm-YDQ"/>
+                                                        <constraint firstAttribute="width" constant="30" id="Hpf-eZ-P7f"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ebS-Rj-fJb" firstAttribute="leading" secondItem="W0N-4E-djf" secondAttribute="trailing" constant="10" id="42U-NI-b3p"/>
+                                                <constraint firstAttribute="bottom" secondItem="ebS-Rj-fJb" secondAttribute="bottom" id="B7M-Ui-eXT"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="GDs-0H-dWX" firstAttribute="leading" secondItem="j55-1r-clJ" secondAttribute="leading" constant="8" id="TKZ-AE-34P"/>
+                                        <constraint firstItem="GDs-0H-dWX" firstAttribute="centerY" secondItem="j55-1r-clJ" secondAttribute="centerY" id="afZ-Be-znT"/>
+                                        <constraint firstAttribute="trailing" secondItem="GDs-0H-dWX" secondAttribute="trailing" constant="8" id="aiW-Ry-Y4Q"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="userImageView" destination="W0N-4E-djf" id="QZx-0j-eWE"/>
+                                    <outlet property="usernameLabel" destination="Nac-Zm-3da" id="KO8-Xn-M0I"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ulI-nn-4Cv" id="g0J-pn-nZl"/>
+                            <outlet property="delegate" destination="ulI-nn-4Cv" id="dP2-QA-KSx"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="3Hp-tP-EnV" kind="presentation" identifier="MyFavoritesToPractitionerProfile" id="EmA-7D-gRe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMm-e1-HmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="134"/>
+        </scene>
+        <!--ProfilePractitionerViewController-->
+        <scene sceneID="qGB-oB-ixT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Booking" referencedIdentifier="ProfilePractitionerViewController" id="3Hp-tP-EnV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i50-Az-8sw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appointment-eye" width="30" height="30"/>
+        <image name="person-default" width="128" height="128"/>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SpinnerVC-->
+        <scene sceneID="14B-oa-9q4">
+            <objects>
+                <viewController storyboardIdentifier="SpinnerVC" id="EHZ-Ig-1FV" customClass="SpinnerVC" customModule="zentai" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cAw-IN-E6L"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zwe-lt-0Cw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dwL-CO-bnj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UaU-aI-zgI">
+                                <color key="backgroundColor" red="0.66274509800000003" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Sle-AU-QVg"/>
+                                    <constraint firstAttribute="width" constant="125" id="nf8-Fv-Ks6"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-ls" translatesAutoresizingMaskIntoConstraints="NO" id="RCx-82-xIG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EaM-Rp-9sG"/>
+                                    <constraint firstAttribute="width" constant="87" id="zfh-vr-F6x"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UaU-aI-zgI" firstAttribute="centerX" secondItem="dwL-CO-bnj" secondAttribute="centerX" id="0AE-YN-05k"/>
+                            <constraint firstItem="UaU-aI-zgI" firstAttribute="centerY" secondItem="dwL-CO-bnj" secondAttribute="centerY" id="fTX-bs-fgE"/>
+                            <constraint firstItem="RCx-82-xIG" firstAttribute="centerX" secondItem="UaU-aI-zgI" secondAttribute="centerX" id="nn6-xR-w6H"/>
+                            <constraint firstItem="RCx-82-xIG" firstAttribute="centerY" secondItem="UaU-aI-zgI" secondAttribute="centerY" id="z5Z-f6-4r5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blurryView" destination="UaU-aI-zgI" id="ihA-ea-Sfz"/>
+                        <outlet property="imageView" destination="RCx-82-xIG" id="gGp-TC-7Jl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m5e-Ll-O0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="-271"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo-ls" width="107" height="120"/>
+    </resources>
+</document>

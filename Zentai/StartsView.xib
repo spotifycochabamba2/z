@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartsView" customModule="zentai" customModuleProvider="target">
+            <connections>
+                <outlet property="fifthStar" destination="1Tg-vx-Q9Z" id="2YK-Gm-e5h"/>
+                <outlet property="firstStar" destination="7Sw-fu-mmu" id="xgE-uk-kg9"/>
+                <outlet property="fourthStar" destination="2Jo-9t-snB" id="ybI-AM-dA2"/>
+                <outlet property="secondStar" destination="cuc-Xa-bpu" id="OJp-3l-ANh"/>
+                <outlet property="thirdStar" destination="dOi-NB-kU7" id="CFc-sI-9SH"/>
+                <outlet property="view" destination="N5K-c6-Ufu" id="KHi-cm-PXM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="N5K-c6-Ufu">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="26"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="esW-8v-8Ch">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inactive-star-icon" translatesAutoresizingMaskIntoConstraints="NO" id="7Sw-fu-mmu">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="E0E-hZ-t0W"/>
+                                <constraint firstAttribute="width" constant="29" id="NIW-0q-Yeu"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inactive-star-icon" translatesAutoresizingMaskIntoConstraints="NO" id="cuc-Xa-bpu">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="29" id="OlO-ct-LKM"/>
+                                <constraint firstAttribute="height" constant="26" id="VbA-RA-zdT"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inactive-star-icon" translatesAutoresizingMaskIntoConstraints="NO" id="dOi-NB-kU7">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="2dN-eV-Rhz"/>
+                                <constraint firstAttribute="width" constant="29" id="u23-SH-QIL"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inactive-star-icon" translatesAutoresizingMaskIntoConstraints="NO" id="2Jo-9t-snB">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="RKO-UW-J5t"/>
+                                <constraint firstAttribute="width" constant="29" id="vxu-0B-SW9"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inactive-star-icon" translatesAutoresizingMaskIntoConstraints="NO" id="1Tg-vx-Q9Z">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="29" id="Sqw-D9-cEt"/>
+                                <constraint firstAttribute="height" constant="26" id="sYY-tp-79R"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="esW-8v-8Ch" firstAttribute="top" secondItem="N5K-c6-Ufu" secondAttribute="top" id="9Ns-FR-7dV"/>
+                <constraint firstItem="esW-8v-8Ch" firstAttribute="centerX" secondItem="N5K-c6-Ufu" secondAttribute="centerX" id="dhf-47-csi"/>
+                <constraint firstAttribute="bottom" secondItem="esW-8v-8Ch" secondAttribute="bottom" id="hvT-hJ-JaK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-139" y="-36"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="inactive-star-icon" width="29" height="26"/>
+    </resources>
+</document>

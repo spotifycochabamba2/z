@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoText-Heavy.ttf">
+            <string>SanFranciscoText-Heavy</string>
+        </array>
+        <array key="SanFranciscoText-Light.ttf">
+            <string>SanFranciscoText-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tutorial TwoVC-->
+        <scene sceneID="wLh-bX-Mc1">
+            <objects>
+                <viewController storyboardIdentifier="TutorialTwoVC" id="PJ5-Iq-8xh" customClass="TutorialTwoVC" customModule="zentai" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ps2-oX-cVz"/>
+                        <viewControllerLayoutGuide type="bottom" id="wAp-SJ-YPt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="76A-DD-Epo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBd-Im-9jG">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yf7-0S-3Tu">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="FYd-aA-THv">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="213" id="0nE-nH-5lp"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FYd-aA-THv" firstAttribute="leading" secondItem="Yf7-0S-3Tu" secondAttribute="leading" id="Jhk-fy-a6V"/>
+                                    <constraint firstAttribute="trailing" secondItem="FYd-aA-THv" secondAttribute="trailing" id="XDY-IX-DFd"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PEb-Y6-liI">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acupuncture is safe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkA-Qk-gS4">
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="18"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="clip" numberOfLines="13" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="81J-fq-Wum">
+                                        <string key="text">It's among the most popular forms of energy
+healing systems and is widely practiced. Its
+origins are in Japanese techniques developed
+for relax the body, reduce the effects of stress
+and promote natural healing.</string>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="15"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VBd-Im-9jG" secondAttribute="trailing" id="19N-zZ-yMV"/>
+                            <constraint firstItem="PEb-Y6-liI" firstAttribute="leading" secondItem="76A-DD-Epo" secondAttribute="leading" id="2Fx-Hz-AWM"/>
+                            <constraint firstAttribute="trailing" secondItem="Yf7-0S-3Tu" secondAttribute="trailing" id="VXp-Q3-E8u"/>
+                            <constraint firstAttribute="trailing" secondItem="PEb-Y6-liI" secondAttribute="trailing" id="W07-rJ-EXV"/>
+                            <constraint firstItem="VBd-Im-9jG" firstAttribute="top" secondItem="Yf7-0S-3Tu" secondAttribute="bottom" id="b2u-hJ-hYw"/>
+                            <constraint firstItem="wAp-SJ-YPt" firstAttribute="top" secondItem="VBd-Im-9jG" secondAttribute="bottom" constant="90" id="rNC-b1-qoo"/>
+                            <constraint firstItem="PEb-Y6-liI" firstAttribute="centerY" secondItem="VBd-Im-9jG" secondAttribute="centerY" id="tGw-7B-7zz"/>
+                            <constraint firstItem="Yf7-0S-3Tu" firstAttribute="leading" secondItem="76A-DD-Epo" secondAttribute="leading" id="uEe-2p-nIu"/>
+                            <constraint firstItem="Yf7-0S-3Tu" firstAttribute="top" secondItem="Ps2-oX-cVz" secondAttribute="bottom" constant="40" id="wTv-Tx-6Vv"/>
+                            <constraint firstItem="VBd-Im-9jG" firstAttribute="leading" secondItem="76A-DD-Epo" secondAttribute="leading" id="yg2-hx-vVe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sia-YO-UGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="388.15592203898052"/>
+        </scene>
+        <!--Tutorial ThreeVC-->
+        <scene sceneID="PAn-tb-VCj">
+            <objects>
+                <viewController storyboardIdentifier="TutorialThreeVC" id="F6n-CX-yqM" customClass="TutorialThreeVC" customModule="zentai" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NhJ-oi-Aob"/>
+                        <viewControllerLayoutGuide type="bottom" id="zKW-Xh-YNc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E2O-Sd-m5m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFk-8B-LHy">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Mrv-28-I2h">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial3" translatesAutoresizingMaskIntoConstraints="NO" id="dfc-ga-fWm">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="213" id="Cgb-wK-6ur"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dfc-ga-fWm" firstAttribute="leading" secondItem="Mrv-28-I2h" secondAttribute="leading" id="7Yx-fH-QKo"/>
+                                    <constraint firstAttribute="trailing" secondItem="dfc-ga-fWm" secondAttribute="trailing" id="bac-NP-azZ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6MY-ln-p46">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acupuncture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zts-HJ-sge">
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="18"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="VQY-ja-O0u">
+                                        <string key="text">There is no real pressure to Acupuncture techniques. It's
+a safe treatment with only good results.</string>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="15"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6MY-ln-p46" firstAttribute="leading" secondItem="E2O-Sd-m5m" secondAttribute="leading" id="B4E-J7-XzK"/>
+                            <constraint firstAttribute="trailing" secondItem="TFk-8B-LHy" secondAttribute="trailing" id="NNA-Ka-x3P"/>
+                            <constraint firstAttribute="trailing" secondItem="Mrv-28-I2h" secondAttribute="trailing" id="Qmt-Hf-Y1J"/>
+                            <constraint firstItem="6MY-ln-p46" firstAttribute="centerY" secondItem="TFk-8B-LHy" secondAttribute="centerY" id="XZ3-Be-2fI"/>
+                            <constraint firstAttribute="trailing" secondItem="6MY-ln-p46" secondAttribute="trailing" id="aDe-Cs-oPh"/>
+                            <constraint firstItem="TFk-8B-LHy" firstAttribute="leading" secondItem="E2O-Sd-m5m" secondAttribute="leading" id="ePH-7H-yL8"/>
+                            <constraint firstItem="TFk-8B-LHy" firstAttribute="top" secondItem="Mrv-28-I2h" secondAttribute="bottom" id="hjq-bL-Yi8"/>
+                            <constraint firstItem="Mrv-28-I2h" firstAttribute="leading" secondItem="E2O-Sd-m5m" secondAttribute="leading" id="iNu-QM-afJ"/>
+                            <constraint firstItem="Mrv-28-I2h" firstAttribute="top" secondItem="NhJ-oi-Aob" secondAttribute="bottom" constant="40" id="kKD-e5-wSo"/>
+                            <constraint firstItem="zKW-Xh-YNc" firstAttribute="top" secondItem="TFk-8B-LHy" secondAttribute="bottom" constant="90" id="zvc-dH-T32"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YY3-JW-k0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="1065"/>
+        </scene>
+        <!--Tutorial OneVC-->
+        <scene sceneID="euD-QB-06u">
+            <objects>
+                <viewController storyboardIdentifier="TutorialOneVC" id="AFo-nq-hYS" customClass="TutorialOneVC" customModule="zentai" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="90s-I1-9Oc"/>
+                        <viewControllerLayoutGuide type="bottom" id="lgw-nQ-GiZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ITh-2f-vz3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J17-k8-SUg">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="KfE-gl-3zr">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tutorial1" translatesAutoresizingMaskIntoConstraints="NO" id="gBb-Gg-3hh">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="213" id="iv3-em-sXT"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rSN-Hu-QZC">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zentai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbU-IP-gFd">
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="18"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="dxA-zl-GLl" userLabel="Same day Acupuncture delivered to you with our vetted 5-star Acupuncture masters.">
+                                        <string key="text">Same day Acupuncture delivered to you with our vetted
+5-star Acupuncture masters.</string>
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="15"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KfE-gl-3zr" firstAttribute="top" secondItem="90s-I1-9Oc" secondAttribute="bottom" constant="40" id="BcU-O2-2rF"/>
+                            <constraint firstItem="J17-k8-SUg" firstAttribute="leading" secondItem="ITh-2f-vz3" secondAttribute="leading" id="DgF-Ee-1xt"/>
+                            <constraint firstItem="rSN-Hu-QZC" firstAttribute="centerY" secondItem="J17-k8-SUg" secondAttribute="centerY" id="Dum-IE-uZe"/>
+                            <constraint firstItem="J17-k8-SUg" firstAttribute="top" secondItem="KfE-gl-3zr" secondAttribute="bottom" id="HRH-vx-Ynf"/>
+                            <constraint firstAttribute="trailing" secondItem="J17-k8-SUg" secondAttribute="trailing" id="Rfx-xf-r2J"/>
+                            <constraint firstItem="KfE-gl-3zr" firstAttribute="leading" secondItem="ITh-2f-vz3" secondAttribute="leading" id="Y7x-gP-fHK"/>
+                            <constraint firstItem="lgw-nQ-GiZ" firstAttribute="top" secondItem="J17-k8-SUg" secondAttribute="bottom" constant="90" id="ZwS-fj-vGt"/>
+                            <constraint firstItem="rSN-Hu-QZC" firstAttribute="leading" secondItem="ITh-2f-vz3" secondAttribute="leading" id="aTI-Jd-WrB"/>
+                            <constraint firstAttribute="trailing" secondItem="rSN-Hu-QZC" secondAttribute="trailing" id="eVc-uw-BZO"/>
+                            <constraint firstAttribute="trailing" secondItem="KfE-gl-3zr" secondAttribute="trailing" id="zxk-gi-UUW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8We-9R-w2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="-270"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="q99-jV-zHd">
+            <objects>
+                <viewController storyboardIdentifier="IntroVC" id="VCC-0N-q1b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KTc-La-7AE"/>
+                        <viewControllerLayoutGuide type="bottom" id="4e6-P2-eCi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="av1-Mz-vgx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rut-zf-xVD">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="csW-2j-ywt">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-signup" translatesAutoresizingMaskIntoConstraints="NO" id="jxh-xg-QAR">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="213" id="Zlb-1c-RPi"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jxh-xg-QAR" firstAttribute="leading" secondItem="csW-2j-ywt" secondAttribute="leading" id="3Uf-9p-8BW"/>
+                                    <constraint firstAttribute="trailing" secondItem="jxh-xg-QAR" secondAttribute="trailing" id="Eqg-rj-JZw"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AEV-xJ-rGr">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-ls" translatesAutoresizingMaskIntoConstraints="NO" id="Ky3-TN-n3l">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="57" id="I2l-NA-7Rr"/>
+                                            <constraint firstAttribute="height" constant="64" id="YRX-rm-pAd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zentai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="es1-pa-ob0">
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Heavy" family="San Francisco Text" pointSize="30"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acupuncture Delivered" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Wp0-58-cSp" userLabel="Same day Acupuncture delivered to you with our vetted 5-star Acupuncture masters.">
+                                        <fontDescription key="fontDescription" name="SanFranciscoText-Light" family="San Francisco Text" pointSize="18"/>
+                                        <color key="textColor" red="0.28235294119999998" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AEV-xJ-rGr" firstAttribute="centerY" secondItem="Rut-zf-xVD" secondAttribute="centerY" id="7Mq-rY-7ev"/>
+                            <constraint firstItem="csW-2j-ywt" firstAttribute="leading" secondItem="av1-Mz-vgx" secondAttribute="leading" id="8Fo-AO-zHV"/>
+                            <constraint firstAttribute="trailing" secondItem="AEV-xJ-rGr" secondAttribute="trailing" id="Fnh-qA-u9Y"/>
+                            <constraint firstItem="Rut-zf-xVD" firstAttribute="top" secondItem="csW-2j-ywt" secondAttribute="bottom" id="Il4-HU-nFf"/>
+                            <constraint firstAttribute="trailing" secondItem="Rut-zf-xVD" secondAttribute="trailing" id="SW5-mG-uW7"/>
+                            <constraint firstItem="4e6-P2-eCi" firstAttribute="top" secondItem="Rut-zf-xVD" secondAttribute="bottom" constant="90" id="aKd-D8-vdB"/>
+                            <constraint firstItem="AEV-xJ-rGr" firstAttribute="leading" secondItem="av1-Mz-vgx" secondAttribute="leading" id="vBl-zh-IBn"/>
+                            <constraint firstItem="csW-2j-ywt" firstAttribute="top" secondItem="KTc-La-7AE" secondAttribute="bottom" constant="40" id="vJL-fL-SOd"/>
+                            <constraint firstAttribute="trailing" secondItem="csW-2j-ywt" secondAttribute="trailing" id="vbK-6P-wWy"/>
+                            <constraint firstItem="Rut-zf-xVD" firstAttribute="leading" secondItem="av1-Mz-vgx" secondAttribute="leading" id="w3c-gT-P1w"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSF-gL-b2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="-270.31484257871068"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login-signup" width="320" height="213"/>
+        <image name="logo-ls" width="107" height="120"/>
+        <image name="tutorial1" width="320" height="210"/>
+        <image name="tutorial2" width="320" height="213"/>
+        <image name="tutorial3" width="320" height="213"/>
+    </resources>
+</document>

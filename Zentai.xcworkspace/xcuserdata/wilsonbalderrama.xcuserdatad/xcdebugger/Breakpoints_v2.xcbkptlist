@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Zentai/BookingViewController.swift"
+            timestampString = "533075401.542352"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1184"
+            endingLineNumber = "1184"
+            landmarkName = "confirmAppointment()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Zentai.BookingViewController.confirmAppointment () -&gt; ()"
+                  moduleName = "Zentai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wilsonbalderrama/zentai-last/Zentai/Zentai/BookingViewController.swift"
+                  timestampString = "533076085.412899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1184"
+                  endingLineNumber = "1184"
+                  offsetFromSymbolStart = "2728">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Zentai.BookingViewController.(confirmAppointment () -&gt; ()).(closure #1)"
+                  moduleName = "Zentai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wilsonbalderrama/zentai-last/Zentai/Zentai/BookingViewController.swift"
+                  timestampString = "533076085.414809"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1184"
+                  endingLineNumber = "1184"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Zentai.BookingViewController.(confirmAppointment () -&gt; ()).(closure #1).(closure #2)"
+                  moduleName = "Zentai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wilsonbalderrama/zentai-last/Zentai/Zentai/BookingViewController.swift"
+                  timestampString = "533076085.416323"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "1184"
+                  endingLineNumber = "1184"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Zentai/Session.swift"
+            timestampString = "533076104.446846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "getCompleteAddress()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
